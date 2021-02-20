@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background: url(aluminum.jpg);
+    background: url(dark-steel.png) no-repeat;
     background-size: cover;
 }
 
@@ -30,4 +30,32 @@ h1>span:nth-child(2){
     text-shadow: 1px 1px 0 #262626, 2px 2px 0 #262626, 3px 3px 0 #262626,
     4px 4px 0 #262626, 5px 5px 0 #262626, 1px 1px 0 #262626, 6px 20px 20px rgba(0,0,0,1),
     -1px -1px 0 #fff ;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+    margin: 5px auto;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+@media only screen and (max-width: 768px){
+    h1>span{
+        font-size: 3em;
+    }
+    body{
+        background-size: 800%;
+        background-position: top;
+        animation: animate 30s ease-in-out alternate infinite;
+    }
+}
+
+@keyframes animate{
+    100%{
+        background-position: center;
+    }
 }
